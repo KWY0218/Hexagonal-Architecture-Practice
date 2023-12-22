@@ -1,8 +1,8 @@
-package com.example.hex.chapter1.application.ports.in;
+package com.example.hex.application.ports.in;
 
-import com.example.hex.chapter1.application.ports.out.RouterViewOutputPort;
-import com.example.hex.chapter1.application.usecases.RouterViewUseCase;
-import com.example.hex.chapter1.domain.Router;
+import com.example.hex.application.ports.out.RouterViewOutputPort;
+import com.example.hex.application.usecases.RouterViewUseCase;
+import com.example.hex.domain.Router;
 
 import java.util.List;
 import java.util.function.Predicate;

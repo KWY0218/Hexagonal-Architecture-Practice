@@ -1,6 +1,6 @@
-package com.example.hex.chapter1.application.usecases;
+package com.example.hex.application.usecases;
 
-import com.example.hex.chapter1.domain.Router;
+import com.example.hex.domain.Router;
 
 import java.util.List;
 import java.util.function.Predicate;

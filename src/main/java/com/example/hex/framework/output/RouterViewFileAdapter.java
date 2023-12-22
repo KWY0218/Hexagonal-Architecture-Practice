@@ -1,7 +1,7 @@
-package com.example.hex.chapter1.framework.output;
+package com.example.hex.framework.output;
 
-import com.example.hex.chapter1.application.ports.out.RouterViewOutputPort;
-import com.example.hex.chapter1.domain.Router;
+import com.example.hex.application.ports.out.RouterViewOutputPort;
+import com.example.hex.domain.Router;
 
 import java.util.List;
 

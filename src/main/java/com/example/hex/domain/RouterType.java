@@ -1,4 +1,4 @@
-package com.example.hex.chapter1.domain;
+package com.example.hex.domain;
 
 public enum RouterType {
     EDGE,
