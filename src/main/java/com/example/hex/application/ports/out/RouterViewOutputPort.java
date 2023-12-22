@@ -1,6 +1,6 @@
 package com.example.hex.application.ports.out;
 
-import com.example.hex.domain.Router;
+import com.example.hex.domain.entity.Router;
 
 import java.util.List;
 

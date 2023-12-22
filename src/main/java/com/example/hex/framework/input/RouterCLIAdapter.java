@@ -2,8 +2,8 @@ package com.example.hex.framework.input;
 
 import com.example.hex.application.ports.in.RouterViewInputPort;
 import com.example.hex.application.usecases.RouterViewUseCase;
-import com.example.hex.domain.Router;
-import com.example.hex.domain.RouterType;
+import com.example.hex.domain.entity.Router;
+import com.example.hex.domain.vo.RouterType;
 import com.example.hex.framework.output.RouterViewFileAdapter;
 
 import java.util.List;
