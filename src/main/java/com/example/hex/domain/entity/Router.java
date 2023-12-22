@@ -1,16 +1,20 @@
-package com.example.hex.domain;
+package com.example.hex.domain.entity;
 
+import com.example.hex.domain.vo.IP;
+import com.example.hex.domain.vo.Network;
+import com.example.hex.domain.vo.RouterId;
+import com.example.hex.domain.vo.RouterType;
 import lombok.Getter;
 
 import java.util.List;
 import java.util.function.Predicate;
-import java.util.stream.Collectors;
 
+@Getter
 public class Router {
-    @Getter
     private final RouterType routerType;
 
     private final RouterId routerId;
+    private Switch networkSwitch;
 
     public Router(RouterType routerType, RouterId routerId) {
         this.routerType = routerType;
@@ -31,10 +35,16 @@ public class Router {
         return p -> p.routerType == RouterType.EDGE;
     }
 
-    public static List<Router> retrieveRouter(List<Router> routers, Predicate<Router> predicate) {
-        return routers.stream()
-                .filter(predicate)
-                .collect(Collectors.toList());
+    public void addNetworkToSwitch(Network network) {
+        this.networkSwitch = networkSwitch.addNetwork(network);
+    }
+
+    public Network createNetwork(IP address, String name, int cidr) {
+        return new Network(address, name, cidr);
+    }
+
+    public List<Network> retrieveNetworks() {
+        return networkSwitch.getNetworks();
     }
 
     @Override
