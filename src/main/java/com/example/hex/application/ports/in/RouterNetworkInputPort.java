@@ -6,7 +6,9 @@ import com.example.hex.domain.entity.Router;
 import com.example.hex.domain.service.NetworkOperation;
 import com.example.hex.domain.vo.Network;
 import com.example.hex.domain.vo.RouterId;
+import org.springframework.stereotype.Component;
 
+@Component
 public class RouterNetworkInputPort implements RouterNetworkUseCase {
     private final RouterNetworkOutputPort routerNetworkOutputPort;
 
